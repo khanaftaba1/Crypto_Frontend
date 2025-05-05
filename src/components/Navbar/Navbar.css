@@ -1,0 +1,107 @@
+.navbar {
+  width: 100%!important;
+  position: fixed!important;
+  top: 0;
+  left: 0;
+  height: 100px;
+  background-color: #000929;
+  box-shadow: 0 1px 1px #27ada6;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  height: 60px;
+
+}
+
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ padding: 0 30px;
+  
+}
+.navbar-logo a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: auto;
+  height: 40px; /* Adjust the height as needed */
+}
+
+.navbar-search {
+  display: flex!important ;
+  position: relative; /* To position the icon inside the input */
+  width: 300px; /* Width of the search box */
+  background-color: #2D3356;
+  border-radius: 8PX;
+
+}
+
+.navbar .navbar-search input {
+  width: 100%; /* Full width of the container */
+  padding: 10px 10px; /* Padding to accommodate the icon */
+  font-size: 14px; /* Font size of the input */
+  border-radius: 8px; /* Rounded corners */
+  outline: none; /* Remove outline */
+  background: #1c2841 ;
+  box-shadow:none ;
+}
+
+.navbar-search .icon {
+  position: absolute; /* Position the icon inside the input */
+  right: 20px; /* Adjust as needed */
+  top: 50%; /* Center vertically */ 
+  color: #27ada6; /* Icon color */
+  font-size: 14px; /* Icon size */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+.navbar-search input::placeholder {
+  color: #999; /* Placeholder text color */
+  font-size: 14px;
+}
+
+
+.logout-button {
+  background-color: #27ada6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0 30px;
+  height: 30x;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #1f8a8a;
+  transform: scale(1.05);
+}
+
+.logout-text {
+  font-size: 12px;
+ 
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar-logo img {
+    height: 30px;
+  }
+
+ 
+}
+
+
+@media (max-width: 768px) {
+  .navbar{
+    display: none!important;
+  }
+}

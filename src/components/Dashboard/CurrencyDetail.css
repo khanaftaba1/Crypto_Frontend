@@ -1,0 +1,197 @@
+/* CurrencyDetail.css */
+
+/* Ensure other existing styles are preserved */
+
+.currency-detail-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto!important; 
+    display: flex;
+    flex-direction: column;
+    height: auto!important;
+  }
+
+
+  /* Card for predicted price */
+.predicted-price-card {
+  background-color: #2c3e50;
+  color: #fff;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Title and value styling in the predicted price card */
+.predicted-price-card h6 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.predicted-price-card h4 {
+  margin-top: 8px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+  
+  .currency-detail-header {
+    padding: 0;
+  }
+  
+  .currency-detail-table .MuiDataGrid-columnHeader {
+    border: none!important; /* Remove the border */
+      
+}
+  .currency-detail-table .MuiDataGrid-columnHeader:after {
+    display: none; /* Remove any border-bottom */
+ }
+  
+  /* Additional customizations for better visibility */
+  .currency-detail-table .MuiDataGrid-columnHeaderTitle {
+    color: #fff; /* Ensure the header text is still visible */
+  }
+  
+  /* Optionally, remove the grid lines for a cleaner look */
+  .currency-detail-table .MuiDataGrid-cell {
+    border-bottom: none!important;
+  }
+
+  .currency-detail-table {
+    background: #000929; /* Dark background for the table */
+    color: #fff; /* Default text color for the table */
+    box-shadow: -2px 2px #27ada6; /* Optional: add a shadow effect */
+    border: none;
+    border-radius: 20px;
+
+
+    margin-bottom: 16px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 16px;
+    /* overflow: auto; */
+  }
+
+  
+  
+  .currency-detail-table {
+    margin-bottom: 16px;
+    
+  }
+  
+  
+  /* Loading screen styles */
+  .buffering-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1f1e5a;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s ease infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+ 
+  
+  .css-e1qvkh-MuiDataGrid-root .MuiDataGrid-container--top [role=row], .css-e1qvkh-MuiDataGrid-root .MuiDataGrid-container--bottom [role=row] {
+    background: #1c2841!important;
+  border-radius: 20px 20px 0px 0px; 
+}
+
+.css-e1qvkh-MuiDataGrid-root {
+ 
+  --DataGrid-rowBorderColor: none!important;
+}
+.css-e1qvkh-MuiDataGrid-root {
+  border-width: 0!important;
+} 
+
+
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 8px;
+  }
+
+  .currency-detail-table {
+    margin-bottom: 8px;
+  }
+
+  .currency-detail-table h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .currency-detail-table {
+    font-size: 0.875rem;
+  }
+
+  .currency-detail-table h2 {
+    font-size: 1.25rem;
+  }
+}
+
+
+/* Media queries for responsiveness */
+  @media (max-width: 767px) {
+   
+    .currency-detail-container{
+      position: relative;
+
+      height: auto; 
+      width :100%!important;
+    }
+   
+    .desktop-only {
+      display: none !important;
+    }
+    .mobile-only {
+      display: block !important;
+    }
+    .main-content {
+      padding: 0;
+      margin-left: 0;
+
+      flex: 1;
+      padding: 16px;
+      overflow: auto;
+
+    }
+    .filter-container {
+      display: flex; /* Show filter container on mobile devices */
+      flex-direction: column;
+      position: fixed;
+      bottom: 0;
+   
+      padding: 10px;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .search-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #000929;
+    }
+  }
+  

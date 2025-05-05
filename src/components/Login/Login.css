@@ -1,0 +1,196 @@
+/* Base styles */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000929;
+    color: #fff;
+    padding: 20px; /* Added padding for better spacing on small screens */
+}
+
+.login-form {
+    width: 100%;
+    max-width: 450px; /* Ensure it doesn’t exceed 450px on larger screens */
+    background: #151451;
+    border-radius: 40px;
+    box-shadow: 2px 2px #27ada6;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+form h1 {
+    font-size: 2.25rem; /* Responsive font size */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #27ada6;
+    border-radius: 40px;
+    font-size: 1rem; /* Responsive font size */
+    color: #98A2B3;
+    padding: 20px 45px 20px 20px;
+    box-sizing: border-box;
+}
+
+.input-box input::placeholder {
+    color: #98A2B3;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 1rem; /* Responsive icon size */
+    color: #27ada6;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem; /* Responsive font size */
+    margin: 10px 0;
+    color: #98A2B3;
+}
+
+.remember-forgot label input {
+    accent-color: #98A2B3;
+    margin-right: 4px;
+}
+
+.remember-forgot a {
+    color: #98A2B3;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    color: #27ada6;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    background: #27ada6;
+    border: none;
+    border-radius: 40px!important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 1rem; /* Responsive font size */
+    color: #fff;
+    font-weight: 700;
+}
+
+button:hover {
+    background: #1f8c8b; /* Slightly darker shade on hover */
+}
+
+.register-link {
+    font-size: 0.9rem; /* Responsive font size */
+    text-align: center;
+    margin: 20px 0 15px;
+    color: #98A2B3;
+}
+
+.register-link p .below {
+    color: #27ada6;
+    padding-left: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p .below:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    padding-left: 20px;
+    margin-top: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 10px; /* Adjust padding for medium screens */
+    }
+
+    .login-form {
+        height: 100vh;
+        padding: 20px; /* Adjust padding for medium screens */
+        border-radius: 20px;
+    }
+    .form-box.login{
+        text-align: center;
+        justify-content: center;
+        padding-top: 50%;
+    }
+    .form-box.register{
+        text-align: center;
+        justify-content: center;
+        padding-top: 50%;
+    }
+    form h1 {
+        font-size: 1.75rem; /* Smaller font size for medium screens */
+    }
+
+    .input-box input {
+        font-size: 0.875rem; /* Smaller font size for medium screens */
+        padding: 15px 30px 15px 15px;
+    }
+
+    button {
+        font-size: 0.875rem; /* Smaller font size for medium screens */
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.875rem; /* Smaller font size for medium screens */
+    }
+
+    .remember-forgot a {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 5px; /* Adjust padding for small screens */
+    }
+
+    .login-form {
+        padding: 15px; /* Adjust padding for small screens */
+        border-radius: 10px;
+    }
+
+    form h1 {
+        font-size: 1.5rem; /* Smaller font size for small screens */
+    }
+
+    .input-box input {
+        font-size: 0.75rem; /* Smaller font size for small screens */
+        padding: 10px 20px 10px 10px;
+    }
+
+    button {
+        height: 40px;
+        font-size: 0.75rem; /* Smaller font size for small screens */
+    }
+
+    .register-link {
+        font-size: 0.75rem; /* Smaller font size for small screens */
+    }
+}
